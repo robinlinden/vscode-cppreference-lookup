@@ -1,0 +1,31 @@
+{
+    "name": "vscode-cppreference-lookup",
+    "displayName": "cppreference lookup",
+    "description": "Easily look up symbols on cppreference.com.",
+    "version": "0.1.0-alpha.1",
+    "publisher": "robinlinden",
+    "engines": {
+        "vscode": "^1.80.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "type": "module",
+    "main": "./extension.js",
+    "contributes": {
+        "commands": [
+            {
+                "command": "vscode-cppreference-lookup.lookupSymbol",
+                "title": "cppreference lookup: Look Up Symbol"
+            }
+        ],
+        "keybindings": [
+            {
+                "command": "vscode-cppreference-lookup.lookupSymbol",
+                "key": "ctrl+alt+shift+c",
+                "mac": "ctrl+cmd+shift+c",
+                "when": "editorTextFocus"
+            }
+        ]
+    }
+}
